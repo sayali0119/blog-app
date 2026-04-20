@@ -10,7 +10,7 @@ export default function PostCard({ post }) {
       <div className="flex items-center justify-between mt-4 text-xs text-gray-400">
         <span>by <span className="font-medium text-gray-600">{post.author?.username}</span></span>
         <div className="flex gap-3">
-          <span>?? {post.likes?.length || 0}</span>
+          <span>&#10084; {post.likes?.length || 0}</span>
           <span>{new Date(post.createdAt).toLocaleDateString()}</span>
         </div>
       </div>
